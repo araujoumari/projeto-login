@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*
+Paleta de Cores
+---------------
+
+#14260F (Verde)
+#070D06 (Verde escuro)
+#52594A (Cinza)
+#736F36 (Bege)
+#592D14 (Bordo)
+
+*/
+
+:root {
+    --cor1:#14260F ;
+    --cor2:#070D06 ;
+    --cor3:#52594A;
+    --cor4:#736F36;
+    --cor5:#592D14; 
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor5);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: width  0.4s, height 0.4s;
+    transition-timing-function: ease;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.450);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: var(--cor5) url(../imagens/pexels-roselène-de-koning-19164855.jpg) no-repeat right center;
+    background-size: cover; 
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div.campo > p > span {
+    transform: translateY(-10px);
+    width: 20%;
+
+    font-size: 2em;
+}
+
+div > h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+div > p {
+    font-size: 1em;
+}
+
+div.campo {
+    display: block;
+    background-color: var(--cor4);
+    height: 30px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+div.campo > p > input {
+    transform: translateY(-80px);
+    padding: 7px;
+    margin: 38px;
+    height: 24px;
+
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit] {
+    background-color: var(--cor5);
+    display: block;
+    width: 100%;
+    height: 30px;
+    transform: translateY(-10px);
+    border-radius: 5px;
+    border: none;
+
+    font-size: 1em;
+    color: white;
+}
+
+div.enviar {
+    background-color: var(--cor5);
+    height: 30px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+a {
+    display: block;
+    background-color: white;
+    border: 1px solid var(--cor5);
+    height: 30px;
+    margin: 5px;
+    border-radius: 7px;
+
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor5);
+}
